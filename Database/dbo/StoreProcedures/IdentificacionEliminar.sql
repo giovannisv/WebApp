@@ -8,7 +8,7 @@ SET NOCOUNT ON
   BEGIN TRANSACTION TRASA
 
     BEGIN TRY
-            DELETE FROM exp.TipoIdenticicacion WHERE IdTipoIdentificacion=@IdTipoIdentificacion
+            DELETE FROM dbo.TipoIdentificacion WHERE IdTipoIdentificacion=@IdTipoIdentificacion
 	
 	  COMMIT TRANSACTION TRASA
 	  SELECT 0 AS CodeError, '' AS MsgError

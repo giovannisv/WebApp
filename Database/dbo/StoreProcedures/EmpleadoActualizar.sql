@@ -14,7 +14,7 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	UPDATE exp.Empleado SET
+	UPDATE dbo.Empleado SET
 	Nombre= @Nombre,
 	 PrimerApellido=@PrimerApellido,
 	 SegundoApellido=@SegundoApellido,

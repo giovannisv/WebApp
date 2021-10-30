@@ -12,7 +12,7 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	INSERT INTO exp.Empleado
+	INSERT INTO dbo.Empleado
 	(Nombre,
 	 PrimerApellido,
 	 SegundoApellido,

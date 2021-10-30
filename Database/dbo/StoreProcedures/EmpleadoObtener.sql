@@ -10,7 +10,7 @@ AS BEGIN
      E.SegundoApellido,
      E.Edad,
      E.FechaNacimiento    
-    FROM EXP.Empleado E
+    FROM dbo.Empleado E
     WHERE
     (@IdEmpleado IS NULL OR IdEmpleado=@IdEmpleado)
 

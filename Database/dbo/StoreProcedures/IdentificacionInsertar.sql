@@ -9,7 +9,7 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	INSERT INTO exp.TipoIdentificacion
+	INSERT INTO dbo.TipoIdentificacion
 	(Descripcion
 	 
 	)
