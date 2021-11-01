@@ -8,9 +8,7 @@ using Entity;
 
 namespace WBL
 {
-   public  class IdentificacionServicio
-    {
-        public interface IIdentificacionService
+           public interface IIdentificacionService
         {
             Task<DBEntity> Create(IdentificacionEntity entity);
             Task<DBEntity> Delete(IdentificacionEntity entity);
@@ -20,6 +18,7 @@ namespace WBL
         }
 
         public class IdentificacionService : IIdentificacionService
+            
         {
             private readonly IDataAccess sql;
 
@@ -65,7 +64,6 @@ namespace WBL
 
                     throw;
                 }
-
             }
 
             //Metodo Create
@@ -80,10 +78,7 @@ namespace WBL
                         entity.Pasaporte,
                         entity.CedulaJuridica,
                         entity.Descripcion
-                        
-
-
-
+                       
                     });
 
                     return await result;
@@ -93,7 +88,6 @@ namespace WBL
 
                     throw;
                 }
-
             }
 
             //Metodo Update
@@ -107,9 +101,7 @@ namespace WBL
                         entity.IdTipoIdentificacion,
                         entity.Pasaporte,
                         entity.CedulaJuridica,
-                        entity.Descripcion
-                       
-
+                        entity.Descripcion                    
 
                     });
 
@@ -117,10 +109,8 @@ namespace WBL
                 }
                 catch (Exception)
                 {
-
                     throw;
                 }
-
             }
 
             //Metodo Delete
@@ -132,8 +122,6 @@ namespace WBL
                     {
                         entity.IdCedula,
 
-
-
                     });
 
                     return await result;
@@ -145,10 +133,7 @@ namespace WBL
                 }
 
             }
-
             #endregion
         }
-
-
     }
-}
+
